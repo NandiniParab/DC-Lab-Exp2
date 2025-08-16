@@ -1,27 +1,72 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# debug
+# =========================
+# General
+# =========================
+node_modules/
+.env
+.env.*
+*.log
+*.log.*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 .pnpm-debug.log*
 
-# env files
-.env*
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
 
-# vercel
-.vercel
+# Archive / Package Files
+*.tgz
+*.zip
+*.tar.gz
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# =========================
+# Backend (Node.js / Express / NestJS etc.)
+# =========================
+/backend/node_modules/
+/backend/dist/
+/backend/build/
+/backend/coverage/
+/backend/logs/
+/backend/tmp/
+/backend/*.tsbuildinfo
+/backend/*.pid
+/backend/*.seed
+/backend/*.pid.lock
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+
+# =========================
+# Frontend (React / Next.js / Vue etc.)
+# =========================
+/frontend/node_modules/
+/frontend/build/
+/frontend/dist/
+/frontend/.cache/
+/frontend/.next/
+/frontend/out/
+/frontend/.npm/
+/frontend/*.tsbuildinfo
+/frontend/coverage/
+/frontend/next-env.d.ts
+
+# =========================
+# Database / Docker / Prisma
+# =========================
+/db/data/          # local DB data folder (if any, e.g., SQLite, Postgres volumes)
+/db/dumps/         # SQL dumps or backups
+/db/migrations/    # if generated and shouldn’t be committed
+docker-compose.override.yml
+*.sqlite
+*.db
+*.db-journal

@@ -1,0 +1,21 @@
+# environment files with DB credentials
+.env
+.env.*
+*.env
+
+# database files (if using SQLite, NeDB, etc.)
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# prisma
+/prisma/migrations/
+/prisma/generated/
+
+# backups
+*.bak
+*.backup
+dump.rdb
+*.sql
+*.tar.gz
