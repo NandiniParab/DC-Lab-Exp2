@@ -1,0 +1,10 @@
+{
+  "name": "tag-game-database",
+  "version": "1.0.0",
+  "description": "Database models and connection for Tag Me game",
+  "main": "connection.js",
+  "dependencies": {
+    "mongodb": "^6.0.0",
+    "bcryptjs": "^2.4.3"
+  }
+}
